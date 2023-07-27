@@ -1,0 +1,36 @@
+.course-title {
+  padding: 2rem;
+  margin-bottom: -3rem;
+}
+
+.course-content {
+  padding: 4rem;
+  display: flex;
+}
+
+.course-topic {
+  outline: 1px solid rgb(216, 216, 216);
+  padding: 2rem;
+}
+
+.course-topic .topic-btn:link,
+.course-topic .topic-btn:visited {
+  color: rgb(46, 46, 46) !important;
+}
+
+.topic-list {
+  padding: 1.5rem 0 2rem 2rem;
+}
+
+.topic-list-item {
+  font-size: 1.8rem;
+  color: rgb(41, 41, 41);
+  padding: 1rem;
+}
+
+.topic-list-item .list-item-link:link,
+.topic-list-item
+  .list-item-link:visited {
+  color: rgb(46, 46, 46) !important;
+  text-decoration: none;
+}

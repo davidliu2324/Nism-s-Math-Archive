@@ -75,7 +75,10 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #091418;
+  padding: 1rem;
+  border-radius: 3px;
+  color: white;
+  background-color: #24515e;
 }
 
 .main-nav-link.nav-cta:link,

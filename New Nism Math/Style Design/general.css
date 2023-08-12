@@ -101,4 +101,100 @@
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+/*FOOTER*/
+.footer {
+  background-color: #204d5a;
+  padding: 3rem 0;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 117rem;
+  margin: auto;
+}
+
+.footer-col {
+  width: 15%;
+  padding: 0 1.5rem;
+  font-weight: 500;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col h4 {
+  font-size: 2.1rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  background-color: #62bed8;
+  height: 0.2rem;
+  box-sizing: border-box;
+  width: 5rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-col ul li a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffff;
+  padding-left: 1rem;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  );
+  margin: 0 1rem 1rem 0;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+/*responsiveness*/
+@media (max-width: 57.4rem) {
+  .footer-col {
+    width: 100%;
+  }
+}
 /* ALL AUTHORED BY NISM (DAVID LIU) */

@@ -1,0 +1,14 @@
+<section>
+<div class="course-title">
+<h3 class="course-title heading-secondary">intro</h3>
+</div>
+<div class="course-content">
+<div class="course-topic">
+<a href="#" class="topic-btn fourth-heading">main</a>
+<ul class="topic-list">
+<li class="topic-list-item"><a href="#" class="list-item-link">main</a></li>
+</ul>
+
+</div>
+</div>
+</section>

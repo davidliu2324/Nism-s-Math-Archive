@@ -1,0 +1,58 @@
+.course-title {
+  padding: 2rem;
+  margin-bottom: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-content {
+  padding: 4rem;
+  display: flex;
+  margin-left: 10rem;
+}
+
+.course-topic {
+  outline: 1px solid rgb(216, 216, 216);
+  padding: 2rem;
+}
+
+.course-topic .topic-btn:link,
+.course-topic .topic-btn:visited {
+  color: rgb(46, 46, 46);
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+
+.course-topic .topic-btn:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: #2e6474;
+}
+
+.topic-list {
+  padding: 1.5rem 0 2rem 2rem;
+}
+
+.topic-list-item {
+  list-style-type: upper-roman;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: rgb(41, 41, 41);
+}
+
+.topic-list-item a:link,
+.topic-list-item a:visited {
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.topic-list-item a:hover {
+  padding: 1rem;
+  transition: 0.3s;
+  color: white;
+  background-color: #24515e;
+  font-size: 110%;
+}

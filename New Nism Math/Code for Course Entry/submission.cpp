@@ -4,16 +4,18 @@
 #include <string>
 using namespace std;
 
-
-string list_code_converter(string section, vector<string> sub_topic_list) {
-    string main_section_title = "<a href=\"#\" class=\"topic-btn fourth-heading\">" + section + "</a>";
-    string sub_html_list{};
-    for (int i = 0; i < sub_topic_list.size(); i++) {
-        sub_html_list += "<li class=\"topic-list-item\"><a; href=\"#\" class=\"list-item-link\">" + sub_topic_list[i];
-        sub_html_list += "</a></li>" + '\n';
+string list_code_converter(vector<string> section, vector<string> sub_topic_list){
+    string current_list_code{};
+    string output{};
+    for (int i=0; i < section.size(); i++){
+        current_list_code += "<a href=\"#\" class=\"topic-btn fourth-heading\">" + section[i] + "</a>";
+        for (int j =0; j < sub_topic_list.size(); j++){
+            current_list_code += "<li class=\"topic-list-item\"><a; href=\"#\" class=\"list-item-link\">" + sub_topic_list[j];
+            current_list_code += "</a></li>" + '\n';
+        }
     }
-    string final_list_code = main_section_title + '\n' + "<ul>" + '\n' + sub_html_list + '\n' + "</ul>" + '\n';
-    return final_list_code;
+    output = '\n' + "<ul>" + '\n' + current_list_code + '\n' + "</ul>" + '\n';
+    return output;
 }
 
 //Input function, is meant to extract both main sections and sub-topics of each section
@@ -23,24 +25,25 @@ string input_function() {
     vector<string> course_sections{};
     //First start with name of the course
     cout << "Enter the name of the course: " << endl;
-    cin >> course_name;
+    getline(cin,course_name);
 
     //Second, all the main sections of the course, not the sub-topics
     //These will all be added to the course_sections vector list
     cout << "Enter all the main sections (NOT THE SUB-TOPICS), separated by an underscore '_'. You may type in spaces as you normally would: " << endl;
-    cin >> main_sections;
+    getline(cin,main_sections);
 
     //main_section_entry variable is used to add the entries into the main_sections vector
     string main_section_entry{};
     for (int i = 0; i < main_sections.length(); i++) {
         if (main_sections[i] == '_') {
             course_sections.push_back(main_section_entry);
-            string main_section_entry{};
+            main_section_entry = "";
             continue;
         }
         if (i == main_sections.length() - 1) {
             main_section_entry += main_sections[i];
             course_sections.push_back(main_section_entry);
+            main_section_entry= "";
             //continue;
         }
 
@@ -51,19 +54,18 @@ string input_function() {
 
     //Input for sub-topics of each section
     string sub_section_entries{};
-    for (int i = 0; i < course_sections.size(); i++) {
-        vector<string> sub_sections{};
-        string sub_section_item{};
-        string list_code{};
-
-        cout << "Enter the sub-sections of this section: " << course_sections[i] << endl << "Separated by an underscore '_' and you may type in spaces as you normally would:" << endl;
-        cin >> sub_section_entries;
+    vector<string> sub_sections{};
+    string sub_section_item{};
+    string current_list_code{};
+    for (int k = 0; k < course_sections.size(); k++) {
+        cout << "Enter the sub-sections of this section: " << course_sections[k] << endl << "Separated by an underscore '_' and you may type in spaces as you normally would:" << endl;
+        getline(cin,sub_section_entries);
 
         //This is for adding the sub sections to a vector
         for (int j = 0; j < sub_section_entries.length(); j++) {
             if (sub_section_entries[j] == '_') {
                 sub_sections.push_back(sub_section_item);
-                string sub_section_item{};
+                sub_section_item = "";
                 continue;
             }
 
@@ -72,8 +74,9 @@ string input_function() {
                 sub_section_item += sub_section_entries[j];
                 sub_sections.push_back(sub_section_item);
                 //Insert code converter below with arguments sub_sections and main_sections[i]//
-                string final_list_code = list_code_converter(course_sections[i], sub_sections);
-                list_code += '\n' + final_list_code;
+                current_list_code = list_code_converter(course_sections, sub_sections);
+                list_code += '\n' + current_list_code;
+                break;
                 //Insert code above//
             }
             else {
@@ -122,7 +125,7 @@ string textbook_resources_input() {
             cin >> textbook_links;
             textbook_list_code += "<li class=\"textbook-list-item\">\n<a href=\"" + textbook_links + '\"' + weird_string + textbook_title_list[j] + "< / a>\n< / li>";
         }
-        string final_textbook_code = "<section class=\"textbook-links\">\n< h3 class = \"textbook-links-title heading-secondary\">Texbook Resources</h3>\n<div class=\"textbook-content-box\">\n<div class=\"textbook-list\">\n<ul>" + textbook_list_code + "</ul>\n</div>\n</div>\n</section>";
+        string final_textbook_code = "<section class=\"textbook-links\">\n<h3 class = \"textbook-links-title heading-secondary\">Texbook Resources</h3>\n<div class=\"textbook-content-box\">\n<div class=\"textbook-list\">\n<ul>" + textbook_list_code + "</ul>\n</div>\n</div>\n</section>";
         return final_textbook_code;
     }
 
@@ -134,5 +137,5 @@ int main() {
     string left_section = main_code_builder(list_code, course_title);
     string right_section = textbook_resources_input();
     string final_code_layout = left_section + '\n' + right_section;
-
+    cout << final_code_layout;
 }

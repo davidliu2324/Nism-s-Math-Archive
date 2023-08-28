@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="Style Design/general.css" />
+    <link
+      rel="stylesheet"
+      href="Style Design/style2.css" />
+
+    <link
+      rel="stylesheet"
+      href="Style Design/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="logo-company-name">
+        <img
+          class="logo"
+          alt="Nism logo"
+          src="images/NISM_FInished.png" />
+        <h1 class="company-name">
+          Nism's Math Archive
+        </h1>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <!-- just copy paste this <li></li> element to add another nav popular-courses-item -->
+            <a
+              class="main-nav-link"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="#"
+              >Section 2</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link nav-cta"
+              href="#"
+              >Donate to Our Sources</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Search Bar -->
+    <div
+      class="px-4 py-5 my-5 text-center">
+      <h1
+        class="display-5 fw-bold text-body-emphasis">
+        Every Single University Class
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
+          Corrupti fuga eos eligendi
+          esse vero. Accusantium
+          corrupti repellendus, fugit
+          magni voluptatem illo sed.
+          Velit necessitatibus quis
+          magni temporibus quisquam sit
+          aspernatur.
+        </p>
+
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control rounded-pill py-3"
+            style="height: 60px"
+            placeholder="Search for classes..."
+            aria-label="Search for classes"
+            aria-describedby="search-button" />
+          <button
+            class="btn btn-primary rounded-pill search-button"
+            type="button"
+            id="search-button">
+            <i
+              class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container px-4 py-5"
+      id="custom-cards">
+      <h2
+        class="pb-4 border-bottom popular-classes">
+        Popular Classes
+      </h2>
+      <!-- Popular Classes Images -->
+      <div
+        class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Calculus 1
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Calculus 2
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Multivariable Calculus
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Introduction to Linear
+                Algebra
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Mathematical Reasoning
+                and Proofs
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Elementary Real Analysis
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Honours Linear Algebra
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Introduction to Group
+                Theory
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./Calculus.png');
+              background-size: cover;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold class">
+                Ordinary Differential
+                Equations and the
+                Laplace Transform
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg
+                class="bi me-2"
+                width="40"
+                height="32">
+                <use
+                  xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p
+              class="text-body-secondary">
+              © 2023
+            </p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#"
+                  class="nav-link p-0 text-body-secondary"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

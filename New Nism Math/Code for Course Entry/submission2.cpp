@@ -50,12 +50,16 @@ string input_function(){
   for (int i = 0; i < amount_of_sections -1; i++){
     string section_iteration{};
     string sub_topic_iteration{};
-    cout << "Enter the next section (In order please): "<< endl;
+
+    cout << "Enter the next section (In order please):" << endl;
+    cin.ignore ( numeric_limits<std::streamsize>::max(), '\n' );
     getline(cin, section_iteration);
 
+
     //extracting the sub-topics of the section iteration
-    cout << "Enter the sub-sections of this section, separated by an underscore '_' and you may type in spaces as you normally would: "<< endl;
-    getline(cin, sub_topic_iteration);
+    cout << "Enter the sub-sections of this section, separated by an underscore '_' and you may type in spaces as you normally would: " << endl;
+    cin.ignore ( numeric_limits<std::streamsize>::max(), '\n' );
+    getline(cin, section_iteration);
 
     //getting the list of sub-topics for this section iteration
     vector<string> sub_topic_list = sub_topic_list_creator(sub_topic_iteration);

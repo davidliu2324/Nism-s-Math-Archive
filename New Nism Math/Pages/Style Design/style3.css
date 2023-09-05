@@ -3,12 +3,6 @@
   padding: 2rem;
 }
 
-.background-image {
-  background-image: url("../images/marcin-skalij-AhmLdXl_azU-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .main-grid {
   justify-content: center;
   padding: 1rem;
@@ -82,14 +76,7 @@
   font-style: italic;
   font-weight: 700;
   padding: 0.6rem;
-  border-radius: 0.6rem;
-  background-color: rgba(
-    201,
-    201,
-    201,
-    0.7
-  );
-  color: black;
+  color: rgb(70, 70, 70);
   line-height: 1.1;
 }
 
@@ -155,17 +142,32 @@
 }
 
 .projects-title {
-  padding: 3rem 2rem 0;
+  padding: 1rem 2rem 0;
   text-align: center;
 }
 
 .nism-math-project-title {
   padding: 0 0 1rem 2rem;
   font-style: italic;
+  color: black;
   text-decoration: underline;
   font-size: 4rem;
 }
 
+.nism-math-img {
+  width: 100%;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
 .project-information {
   display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.project-description {
+  font-size: 1.8rem;
+  color: black;
+  padding: 1.5rem;
+  line-height: 1.5;
 }

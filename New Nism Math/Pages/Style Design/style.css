@@ -157,41 +157,10 @@ body {
   font-weight: 700;
 }
 
-/****************************/
-/*POPULAR COURSES SECTION*/
-/****************************/
-
-.popular-courses-title {
-  text-align: center;
-}
-
-.most-popular-courses {
-  padding: 9.6px 0;
-  background-color: #50b6d4;
-  padding: 5rem;
-}
-
-.popular-courses-title {
-  text-align: center;
-}
-
-.popular-courses-item {
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.popular-courses-button {
-  transition: all 0.7s;
-}
-
-.popular-courses-button:hover {
-  transform: scale(1.1);
-}
-
 /*****************************/
 /**OUR TOP CREATORS SECTION**/
 /******************************/
+
 .subheading {
   display: block;
   font-size: 2rem;
